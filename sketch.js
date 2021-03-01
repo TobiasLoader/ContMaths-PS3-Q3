@@ -392,8 +392,8 @@ function windowResized(){
 function mouseDragged(){
 	if (!graphClicked){
 		dragging = true;
-		OxDrag += (mouseX-pmouseX)/(unitPix*s*3.2);
-		OyDrag -= (mouseY-pmouseY)/(unitPix*s*3.2);
+		OxDrag += (mouseX-pmouseX)/(unitPix*s*2);
+		OyDrag -= (mouseY-pmouseY)/(unitPix*s*2);
 		initFuncs();
 		plotFuncs();
 	}
